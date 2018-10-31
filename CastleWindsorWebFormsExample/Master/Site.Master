@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CastleWindsorWebFormsExample.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Castle Windsor Example</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="main" runat="server" />
+        <fieldset>
+            <legend>MasterPage</legend>
+            <p><%= DateTimeProvider.Now %></p>
+        </fieldset>
+    </form>
+</body>
+</html>
